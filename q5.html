@@ -1,22 +1,27 @@
-<!DOCTYPE html>
-<html>
+
+<html >
 <head>
-	<meta charset="utf-8">
-	<title>java5</title>
-	<script type="text/javascript">
-		var images = ['land.jpg','iceberg.jpg','landscape.jpg','cloud.jpg'];
-
-// Get the div you want to add element to
-var rigDiv = $(".rig");
-
-// Loop through images and add them to target div
-for(var image of images){
-    var element = '<li><img src="' + image + '" /></li>';
-    rigDiv.append(element);
-}
-    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<tbody>
+<body>
 
-</tbody>
+</body>
+<script>
+
+    var images=new Array();
+    images=["img1.jpg","img2.jpg","img3.jpg","img4.jpg"];
+
+    for (let index = 0; index < images.length; index++) 
+ {
+     
+    img=document.createElement("img");
+     img.src=images[index];
+    img.width=300;
+    img.height=300;
+    document.body.appendChild(img);
+ }
+</script>
 </html>
